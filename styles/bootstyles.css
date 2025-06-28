@@ -1,0 +1,26 @@
+
+#header, #main, #footer {
+    padding: 20px;
+    margin: 10px;
+}
+#header, #footer {
+    background-color: #ccc;
+}
+#main {
+    background-color: #eee;
+}
+
+.tableau-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;   /* 16:9 aspect ratio; adjust if you prefer */
+}
+
+.tableau-wrap .tableauPlaceholder,
+.tableau-wrap object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

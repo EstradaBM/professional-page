@@ -1,0 +1,92 @@
+/* Author: Brandi Estrada  |  Last Edited: 2025‑06‑27 */
+
+:root {
+  --primary-font: Arial, sans-serif;
+  --accent-color: #feda6a;         /* Are ya yellow?! */
+  --secondary-color: #d4d4dc;      /* Silver Fox */
+  --text-color: #d4d4dc;           /* Matching Silver Fox */
+  --header-color: #feda6a;
+  --background-color: #1d1e22;     /* Dark Slate */
+  --card-color: #393f4d;           /* Deep Matte Grey */
+  }
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--header-color);
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+nav a {
+  color: var(--accent-color);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+a {
+  color: #d4d4dc;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+.resume-section {
+  background: var(--card-color);
+  padding: 1rem;
+  border-left: 4px solid var(--accent-color);
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.anchor-target {
+  position: relative;
+  top: -60px;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  body { font-size: 1.05rem; }
+}
